@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.ninjup.votosya"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+}
+
+dependencies {
+
+    compile supportDependencies.design
+    compile supportDependencies.appcompat
+    compile supportDependencies.cardview
+    compile supportDependencies.recyclerview
+
+    compile squareDependencies.retrofit
+    compile squareDependencies.adapter_rx_java
+    compile squareDependencies.converter_gson
+    compile squareDependencies.picasso
+
+    compile reactiveDependencies.rxandroid
+    compile reactiveDependencies.rxjava
+
+    compile elementalDependencies.butterknife
+    compile elementalDependencies.butterknifeProcessor
+    compile elementalDependencies.circleimageview
+
+    testCompile testingDependencies.junit
+    testCompile testingDependencies.mockito
+    testCompile testingDependencies.robolectric
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+}

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">VotosYa</string>
+
+    <!-- Menu -->
+    <string name="action_search">Search</string>
+    <string name="action_github">Github</string>
+
+    <string name="contentDescription">ContentDescription</string>
+    <string name="candidate_name_item">Candidate Name</string>
+    <string name="candidate_votes_item">Votos: </string>
+    <string name="candidate_votes_item_default">ingresar</string>
+    <string name="candidate_votes_item_porcentaje">Porcentaje:</string>
+    <string name="candidate_party_item">Party Name</string>
+
+    <!-- fragment_artists.xml -->
+    <string name="search_hint">Buscar Candidato</string>
+    <string name="search_music_hint">Busca a tu candidato</string>
+    <string name="search_artist_hint">Buscar Candidatos.</string>
+
+    <!-- exceptions -->
+    <string name="error_candidate_not_found">Candidato no encontrado, compruebe que el nombre está escrito de la manera correcta</string>
+    <string name="error_tracks_not_found">Lugar no encontrado, compruebe que el nombre está escrito de la manera correcta</string>
+    <string name="error_internet_connection">¡Por favor, revise su conexión a internet!</string>
+    <string name="error_server_internal">Algo salió mal con el servidor.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
